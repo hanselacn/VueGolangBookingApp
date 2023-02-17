@@ -105,7 +105,7 @@
             this.$router.push({name: 'login.login'})
           }
             axios
-            .get('  https://5301-114-10-16-47.ap.ngrok.io/room')
+            .get('https://5301-114-10-16-47.ap.ngrok.io/room')
             .then((response)=>{
                 console.log(response.data.data)
                 this.rooms = response.data.data
