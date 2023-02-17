@@ -12,7 +12,7 @@ export default {
         "username" : localStorage.getItem("username"),
       }
       axios
-      .put('http://127.0.0.1:8080/users/logout', data)
+      .put('  https://5301-114-10-16-47.ap.ngrok.io/users/logout', data)
       .then((response)=>{
                 console.log(response.data.data)
                     localStorage.removeItem("username")        

@@ -67,7 +67,7 @@
       }
       console.log(this.username)
       axios
-      .post('http://127.0.0.1:8080/user', data)
+      .post('  https://5301-114-10-16-47.ap.ngrok.io/user', data)
       .then((response)=>{
                 console.log(response.data)
                     this.errorMsg = "Register Success"

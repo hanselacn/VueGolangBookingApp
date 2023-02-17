@@ -247,7 +247,7 @@ import axios from 'axios'
             this.roomname = dataroom
 
             axios
-            .get(`http://127.0.0.1:8080/booking?booked_day=${dataday}&booked_room=${dataroom}`)
+            .get(`  https://5301-114-10-16-47.ap.ngrok.io/booking?booked_day=${dataday}&booked_room=${dataroom}`)
             .then((response)=>{
                 console.log(response.data.data)
                 var final = response.data.data
@@ -281,7 +281,7 @@ import axios from 'axios'
               }
             console.log()
             axios
-            .post("http://127.0.0.1:8080/booking",
+            .post("  https://5301-114-10-16-47.ap.ngrok.io/booking",
               data
             ).then((response)=>{
                 console.log(response.data.data)
@@ -317,7 +317,7 @@ import axios from 'axios'
                 "sesj" : false,
               }
             axios
-            .post("http://127.0.0.1:8080/booking",
+            .post("  https://5301-114-10-16-47.ap.ngrok.io/booking",
               data
             ).then((response)=>{
                 console.log(response.data.data)
@@ -354,7 +354,7 @@ import axios from 'axios'
               }
             console.log()
             axios
-            .post("http://127.0.0.1:8080/booking",
+            .post("  https://5301-114-10-16-47.ap.ngrok.io/booking",
               data
             ).then((response)=>{
                 console.log(response.data.data)
@@ -391,7 +391,7 @@ import axios from 'axios'
               }
             console.log()
             axios
-            .post("http://127.0.0.1:8080/booking",
+            .post("  https://5301-114-10-16-47.ap.ngrok.io/booking",
               data
             ).then((response)=>{
                 console.log(response.data.data)
@@ -428,7 +428,7 @@ import axios from 'axios'
               }
             console.log()
             axios
-            .post("http://127.0.0.1:8080/booking",
+            .post("  https://5301-114-10-16-47.ap.ngrok.io/booking",
               data
             ).then((response)=>{
                 console.log(response.data.data)
@@ -465,7 +465,7 @@ import axios from 'axios'
               }
             console.log()
             axios
-            .post("http://127.0.0.1:8080/booking",
+            .post("  https://5301-114-10-16-47.ap.ngrok.io/booking",
               data
             ).then((response)=>{
                 console.log(response.data.data)
@@ -502,7 +502,7 @@ import axios from 'axios'
               }
             console.log()
             axios
-            .post("http://127.0.0.1:8080/booking",
+            .post("  https://5301-114-10-16-47.ap.ngrok.io/booking",
               data
             ).then((response)=>{
                 console.log(response.data.data)
@@ -539,7 +539,7 @@ import axios from 'axios'
               }
             console.log()
             axios
-            .post("http://127.0.0.1:8080/booking",
+            .post("  https://5301-114-10-16-47.ap.ngrok.io/booking",
               data
             ).then((response)=>{
                 console.log(response.data.data)})
@@ -571,7 +571,7 @@ import axios from 'axios'
               }
             console.log()
             axios
-            .post("http://127.0.0.1:8080/booking",
+            .post("  https://5301-114-10-16-47.ap.ngrok.io/booking",
               data
             ).then((response)=>{
                 console.log(response.data.data)
@@ -608,7 +608,7 @@ import axios from 'axios'
               }
             console.log()
             axios
-            .post("http://127.0.0.1:8080/booking",
+            .post("  https://5301-114-10-16-47.ap.ngrok.io/booking",
               data
             ).then((response)=>{
                 console.log(response.data.data)})

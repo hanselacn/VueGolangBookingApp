@@ -84,7 +84,7 @@
             this.$router.push({name: 'login.login'})
           }
           axios
-          .get('http://127.0.0.1:8080/room')
+          .get('  https://5301-114-10-16-47.ap.ngrok.io/room')
           .then((response)=>{
               console.log(response.data.data)
               this.rooms = response.data.data
@@ -97,7 +97,7 @@
       DeleteRoom(id){
         const us = localStorage.getItem("username")
         axios
-        .delete(`http://127.0.0.1:8080/deleteroom/${us}/${id}`)
+        .delete(`  https://5301-114-10-16-47.ap.ngrok.io/deleteroom/${us}/${id}`)
         .then((response)=>{
               console.log(response.data.data)
               if (response.data.status == "SUCCESS"){
@@ -117,7 +117,7 @@
         "created_by" : us,
       }
       axios
-        .post(`http://127.0.0.1:8080/room`, data)
+        .post(`  https://5301-114-10-16-47.ap.ngrok.io/room`, data)
         .then((response)=>{
               console.log(response.data.data)
               if (response.data.status == "SUCCESS"){

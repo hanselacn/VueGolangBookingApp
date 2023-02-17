@@ -89,7 +89,7 @@ export default {
             this.$router.push({name: 'login.login'})
           }
           axios
-          .get(`http://127.0.0.1:8080/booking/${user}`)
+          .get(`  https://5301-114-10-16-47.ap.ngrok.io/booking/${user}`)
           .then((response)=>{
               console.log(response.data.data)
               this.bookings = response.data.data
@@ -98,7 +98,7 @@ export default {
       },DeleteBookingList(id){
         localStorage.setItem('book_id', id)
         axios
-        .delete(`http://127.0.0.1:8080/booking/${id}`)
+        .delete(`  https://5301-114-10-16-47.ap.ngrok.io/booking/${id}`)
         .then((response)=>{
         console.log(response.data)
         if (response.data.status == "SUCCESS"){

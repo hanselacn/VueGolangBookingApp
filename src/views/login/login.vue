@@ -59,7 +59,7 @@
         "password" : this.password,
       }
       axios
-      .put('http://127.0.0.1:8080/users/login', data)
+      .put('  https://5301-114-10-16-47.ap.ngrok.io/users/login', data)
       .then((response)=>{
                 console.log(response.data)
                     this.errorMsg = "Login Success" 

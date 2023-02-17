@@ -84,7 +84,7 @@
             this.$router.push({name: 'login.login'})
           }
           axios
-          .get('http://127.0.0.1:8080/users')
+          .get('  https://5301-114-10-16-47.ap.ngrok.io/users')
           .then((response)=>{
               console.log(response.data.data)
               this.users = response.data.data
@@ -99,7 +99,7 @@
         console.log(this.uname)
         const sup = this.uname
         axios
-        .put(`http://127.0.0.1:8080/user/grant/${id}/${sup}`)
+        .put(`  https://5301-114-10-16-47.ap.ngrok.io/user/grant/${id}/${sup}`)
         .then((response)=>{
               console.log(response.data.data)
               if (response.data.status == "SUCCESS"){
@@ -116,7 +116,7 @@
         console.log(this.uname)
         const sup = this.uname
         axios
-        .put(`http://127.0.0.1:8080/user/demote/${id}/${sup}`)
+        .put(`  https://5301-114-10-16-47.ap.ngrok.io/user/demote/${id}/${sup}`)
         .then((response)=>{
               console.log(response.data.data)
               if (response.data.status == "SUCCESS"){
